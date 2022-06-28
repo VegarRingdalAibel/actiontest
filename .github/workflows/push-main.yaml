@@ -1,12 +1,12 @@
 name: Node.js CI
 
 on:
-  pull_request_review:
-    types: [submitted]
+  push:
+    branches: [ main ]
 
 jobs:
   build:
-    if: github.event.review.state == 'approved'
+    if: github.event.pusher.email != 'action@github.com'
     runs-on: ubuntu-latest
 
     strategy:
