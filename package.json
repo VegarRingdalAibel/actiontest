@@ -1,0 +1,20 @@
+{
+  "name": "actiontest",
+  "version": "1.0.0",
+  "description": "github acion test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VegarRingdalAibel/actiontest.git"
+  },
+  "keywords": [],
+  "author": "Vegar Ringdal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VegarRingdalAibel/actiontest/issues"
+  },
+  "homepage": "https://github.com/VegarRingdalAibel/actiontest#readme"
+}
