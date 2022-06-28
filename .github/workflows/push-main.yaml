@@ -29,5 +29,5 @@ jobs:
       - run: git config --global user.name GithubAction
       - run: npm run release
       - run: git push --force --follow-tags origin main
-      - run: docker images
+      - run: docker login ${{ secrets.CONTAINER_REG }} --username ${{ secrets.CONTAINER_USERNAME }} --password ${{ secrets.CONTAINER_PASSWORD }}
 
