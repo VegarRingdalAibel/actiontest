@@ -29,6 +29,7 @@ jobs:
       - run: git config --global user.name GithubAction
       - run: npm run release
       - run: git push --force --follow-tags origin main
+      # https://github.com/docker/login-action#azure-container-registry-acr
       - name: Login to ACR
         uses: docker/login-action@v2
         with:
