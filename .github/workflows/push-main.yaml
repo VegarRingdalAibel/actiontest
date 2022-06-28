@@ -15,14 +15,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with: 
+          ssh-key: 'SSH_PRIVATE_KEY'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - run: npm run release
       - run: git push --follow-tags origin
 
