@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    if: github.event.pusher.email != 'action@github.com'
+    if: github.event.pusher.name != 'GithubAction'
     runs-on: ubuntu-latest
 
     strategy:
@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: git config --global user.email "action@github.com"
-      - run: git config --global user.name "Github Action"
+      - run: git config --global user.name "GithubAction"
       - run: npm run release
       - run: git push --follow-tags origin
 
