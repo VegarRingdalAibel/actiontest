@@ -28,6 +28,6 @@ jobs:
       - run: git config --global user.email "action@github.com"
       - run: git config --global user.name "GithubAction"
       - run: npm run release
-      - run: git push --follow-tags origin
+      - run: git push --force --follow-tags origin 
       - run: docker images
 
