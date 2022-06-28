@@ -25,9 +25,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: git config --global user.email action@aibel.com
-      - run: git config --global user.name actionAibel
+      - run: git config --global user.email vegar.ringdal@aibel.com
+      - run: git config --global user.name VegarRingdalAibel
       - run: npm run release
-      - run: git push --follow-tags origin main
+      - run: git push --force --follow-tags origin main
       - run: docker images
 
