@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"OK test\"",
-    "test2": "echo \"Exit 1\" && exit 1"
+    "test2": "echo \"Exit 1\" && exit 1",
+    "prepare": "husky install",
+    "release:test": "standard-version --dry-run",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/VegarRingdalAibel/actiontest/issues"
   },
-  "homepage": "https://github.com/VegarRingdalAibel/actiontest#readme"
+  "homepage": "https://github.com/VegarRingdalAibel/actiontest#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1",
+    "standard-version": "^9.5.0"
+  }
 }
