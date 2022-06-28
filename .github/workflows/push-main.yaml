@@ -15,6 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with: 
+          ssh-key: 'SSH_PRIVATE_KEY'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
