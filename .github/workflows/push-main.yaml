@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: git pull    
+      - run: git pull origin main
       - run: npm i
       - run: git config --global user.email "action@github.com"
       - run: git config --global user.name "GithubAction"
