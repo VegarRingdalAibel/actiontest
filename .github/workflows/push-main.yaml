@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: git pull    
-      - run: npm ci
+      - run: npm i
       - run: git config --global user.email "action@github.com"
       - run: git config --global user.name "GithubAction"
       - run: npm run release:test
