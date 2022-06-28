@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: git config --global user.email "action@github.com"
       - run: git config --global user.name "GithubAction"
-      - run: npm run release
+      - run: npm run release:test
       - run: git push --follow-tags origin
       - run: docker images
 
