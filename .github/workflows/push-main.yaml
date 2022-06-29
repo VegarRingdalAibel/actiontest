@@ -31,7 +31,7 @@ jobs:
       - run: git push --force --follow-tags origin main
       # https://github.com/docker/login-action#azure-container-registry-acr
       - name: Login to ACR
-        uses: docker/login-action@v2
+        uses: docker/login-action@v1
         with:
           registry: ablacr.azurecr.io
           username: ${{ secrets.CONTAINER_USERNAME }}
