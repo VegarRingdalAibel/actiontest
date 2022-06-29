@@ -6,7 +6,7 @@ const buildDocker = async () => {
     let filePath = path.resolve(process.cwd(), `./package.json`);
     const packageJson = await readFile(filePath);
     const json = JSON.parse(packageJson);
-    const name = "ablacr.azurecr.io/team-incubator/web-3d";
+    const name = json.image || "missing";
     logInfo(`About to run: ${name}:${json.version}`, "green");
 
     const err = await spawner(

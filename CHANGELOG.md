@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.12](https://github.com/VegarRingdalAibel/actiontest/compare/v1.1.11...v1.1.12) (2022-06-28)
+
+
+### Bug Fixes
+
+* something ([a9b1706](https://github.com/VegarRingdalAibel/actiontest/commits/a9b1706d4d803f43994618ca56dc1e11323a195e))
+
 ### 1.1.11 (2022-06-28)
 
 ### 1.1.10 (2022-06-28)
